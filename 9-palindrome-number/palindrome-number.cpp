@@ -3,10 +3,10 @@ public:
     bool isPalindrome(int x) {
         int n=x;
         int result=0;
+        if(n<0){
+            return false;
+        }
         while(n!=0){
-            if(n<0){
-                return false;
-            }
             int r=n%10;
             n=n/10;
             
